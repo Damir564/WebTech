@@ -1,0 +1,62 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  --font-main1: black;
+  --background-main1: white;
+  --font-main2: white;
+  --font-second2: #F0F0FA;
+  --background-main2: #3579F4;
+  --background-second2: #5591FF;
+  --font-main3: white;
+  --background-main3: black;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 2.2rem;
+}
+
+p.small {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a.button {
+    font-size: 2.2rem;
+    color: var(--font-main1);
+    text-decoration: none;
+}
+
+button {
+    font-size: 1.6rem;
+}
+
+li.center {
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid var(--font-main1);
+}
+
+section.second {
+    background-color: var(--background-main2);
+}
+
+section.third {
+    background-color: var(--background-main3);
+    text-align: center;
+}
+
+a.third {
+    color: var(--font-main3)
+}
