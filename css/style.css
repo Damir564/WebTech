@@ -1,6 +1,7 @@
-:root {
+html {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
+  box-sizing: border-box;
   --font-main1: black;
   --background-main1: white;
   --font-main2: white;
@@ -10,19 +11,35 @@
   --font-main3: white;
   --background-main3: black;
   --font-second3: #666666;
+  --margin-top: 1em;
+  --margin-bottom: 0.7em;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+img {
+    margin-top: 1rem;
+}
+
+header {
+    padding: 0 0 0 1rem;
 }
 
 h1 {
     font-size: 3.8rem;
+    margin: --margin-top 0 --margin-bottom 0;
 }
 
 h2 {
     font-size: 3.4rem;
+    margin: --margin-top 0 --margin-bottom 0;
 }
 
 h3 {
     font-size: 2.8rem;
     color: var(--background-main2);
+    margin: --margin-top 0 --margin-bottom 0;
 }
 
 hr {
@@ -36,6 +53,7 @@ p.big {
 
 p {
     font-size: 2.2rem;
+    margin: --margin-top 0 --margin-bottom 0;
 }
 
 p.small {
@@ -49,14 +67,22 @@ p.third {
     color: var(--font-second3);
 }
 
+a {
+    margin: --margin-top 0 --margin-bottom 0;
+}
+
 a.button {
     font-size: 2.2rem;
     color: var(--font-main1);
     text-decoration: none;
 }
+a.third {
+    color: var(--font-main3)
+}
 
 button {
     font-size: 1.6rem;
+    margin: --margin-top 0 --margin-bottom 0;
 }
 
 li.center {
@@ -68,6 +94,10 @@ li.center {
     height: 100px;  */
 }
 
+section {
+    padding: 0 1rem 0 1rem;
+}
+
 section.second {
     background-color: var(--background-main2);
 }
@@ -75,8 +105,4 @@ section.second {
 section.third {
     background-color: var(--background-main3);
     text-align: center;
-}
-
-a.third {
-    color: var(--font-main3)
 }
