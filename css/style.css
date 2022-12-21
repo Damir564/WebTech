@@ -24,6 +24,34 @@ html {
     margin-top: 1rem;
 } */
 
+/* .wrapper {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+} */
+
+/* div.flex-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  flex-wrap: wrap;
+  width: 25rem;
+} */
+
+ul.first {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 360px;
+  padding: 0 0 0 1rem;
+}
+
+p.img-title {
+  font-size: 1.4rem;
+}
+
 header {
   padding: 0 0 0 1rem;
 }
@@ -102,10 +130,12 @@ li.center {
   box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-input[type="text"], input[type="tel"], textarea {
-    margin-bottom: 1em;
+input[type="text"],
+input[type="tel"],
+textarea {
+  margin-bottom: 1em;
   width: 100%;
-  background-color : #d1d1d1; 
+  background-color: #d1d1d1;
 }
 
 /* input.text {
