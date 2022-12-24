@@ -135,7 +135,7 @@ img.img-big-container {
   display: block;
   object-fit: contain;
   /* margin-left: auto; */
-  margin-right: -2rem;
+  margin-right: 0rem;
   /* float: right; */
   width: 50%;
   height: auto;
