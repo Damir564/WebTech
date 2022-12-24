@@ -15,14 +15,20 @@
 
 <body>
   <header>
-    <div class="page-max-width">
+    <div class="page-max-width wrapper header">
       <a href="#">
-        <img src="/" alt="MDA SHIPPING" />
+        <img src="img/logo.svg" alt="MDA SHIPPING" />
       </a>
-      <a href="#">
-        <img src="/" alt="На главную" />
-      </a>
-      <button><img src="/" alt="Меню" /></button>
+      <nav class="header-menu-wide">
+        <a class="header-menu-1" href="#">HOME</a>
+        <a class="header-menu-2" href="#">SERVICES</a>
+        <a class="header-menu-1" href="#">CONTACTS</a>
+      </nav>
+      <div class="header-social-links">
+        <a href="#"><img src="img/telegram.svg" alt="tg" /></a>
+        <a href="#"><img src="img/whatsapp.svg" alt="whatsapp" /></a>
+      </div>
+      <button class="header-menu-button"><img src="img/menu.svg" alt="Меню" /></button>
     </div>
   </header>
   <main>
@@ -136,41 +142,44 @@
   </main>
   <footer>
     <section class="second">
-      <div class="page-max-width">
-        <h2>Contact us</h2>
-        <p class="small">Contact us if you need more information about our services</p>
-        <form action="/" method="get">
-          <p class="form">
-            <input class="text" type="text" name="name" id="name" placeholder="Name" />
-          </p>
-          <p class="form">
-            <input class="text" type="tel" name="phone" id="phone" placeholder="Phone number" />
-          </p>
-          <p class="form">
-            <!-- <input type="text" name="message" id="message" placeholder="Message"/> -->
-            <textarea class="text" id="message" placeholder="Message"></textarea>
-          </p>
-          <p class="small">
-            <label>
-              <input type="checkbox" name="agree" id="agree" />
-              I agree with the <a href="#">Privacy policy</a>
-            </label>
-          </p>
-          <button class="submit">SEND A MESSAGE</button>
-        </form>
-        <img src="/" alt="Машина на борту" width="373" height="323" />
+      <div class="page-max-width wrapper">
+        <div>
+          <h2>Contact us</h2>
+          <p class="small">Contact us if you need more information about our services</p>
+          <form action="/" method="get">
+            <p class="form">
+              <input class="text" type="text" name="name" id="name" placeholder="Name" />
+            </p>
+            <p class="form">
+              <input class="text" type="tel" name="phone" id="phone" placeholder="Phone number" />
+            </p>
+            <p class="form">
+              <!-- <input type="text" name="message" id="message" placeholder="Message"/> -->
+              <textarea class="text" id="message" placeholder="Message"></textarea>
+            </p>
+            <p class="small">
+              <label>
+                <input type="checkbox" name="agree" id="agree" />
+                I agree with the <a href="#">Privacy policy</a>
+              </label>
+            </p>
+            <button class="submit">SEND A MESSAGE</button>
+          </form>
+        </div>
+        <img class="img-dynamic" src="img/img_last_with_car.png" alt="Машина на борту" width="373"
+          height="323" />
       </div>
     </section>
     <section class="third">
       <div class="page-max-width">
-        <img src="/" alt="MDA SHIPPING" width="235" height="67" />
+        <img src="img/logo_1.svg" alt="MDA SHIPPING" width="235" height="67" />
         <ul>
           <li><a href="#" class="third">HOME</a></li>
           <li><a href="#" class="third">SERVICES</a></li>
           <li><a href="#" class="third">CONTACTS</a></li>
         </ul>
-        <a href="#" class="third"><img src="/" alt="whatsapp" /></a>
-        <a href="#" class="third"><img src="/" alt="telegram" /></a>
+        <a href="#" class="third"><img src="img/whatsapp_1.svg" alt="whatsapp" /></a>
+        <a href="#" class="third"><img src="img/telegram_1.svg" alt="telegram" /></a>
         <p><a href="#" class="third">info@cargo.us</a></p>
         <p><a href="#" class="third">+1 912 000 0000</a></p>
         <p class="third">Copyright © 2022 Cargo. All Rights reserved.</p>
