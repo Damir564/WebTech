@@ -71,6 +71,8 @@ html {
 
 .page-max-width {
   max-width: 1170px;
+  /* margin: 0 auto; */
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -115,6 +117,14 @@ html {
   /* align-self: flex-start; */
 }
 
+.form-center {
+  /* gap: 2.5rem; */
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  /* justify-content: center; */
+}
+
 
 img.img-big-container {
   display: block;
@@ -135,6 +145,11 @@ img.img-dynamic {
   /* width: 50%; */
   flex-basis: 27rem;
   flex-grow: 1;
+  /* margin-left: auto; */
+  margin-right: 0rem;
+  /* float: right; */
+  /* width: 50%; */
+  /* align-self: stretch; */
 }
 
 .types-of-boats {
@@ -195,9 +210,9 @@ img.first {
     padding-right: 2.5rem;
 }
 
-header {
+/* header {
   padding: 0 0 0 1rem;
-}
+} */
 
 hr {
   width: auto;
@@ -269,7 +284,8 @@ button {
   margin: var(--margin-top) 0 var(--margin-bottom) 0;
 }
 
-button.submit {
+button.form {
+  width: 32rem;
   background: var(--font-main3);
   border-radius: 1rem;
   border: 0;
@@ -279,6 +295,14 @@ button.submit {
   padding-right: 5.56em;
   padding-top: 1.25em;
   padding-bottom: 1.31em;
+  transition-duration: 0.4s;
+  transition-property: all;
+}
+
+button.form:hover {
+  background: var(--background-second2);
+  border: 0.5px solid currentColor;
+  transform: scale(1.1);
 }
 
 li.center {
@@ -296,6 +320,9 @@ li.center {
 }
 
 input[type="text"],
+input[type="date"],
+input[type="mail"],
+input[type="password"],
 input[type="tel"],
 textarea {
   margin-bottom: 1em;
@@ -309,6 +336,13 @@ textarea {
   padding-bottom: 1.5rem;
   padding-top: 1.19em;
   border-radius: 1rem;
+  transition-duration: 0.4s;
+  transition-property: all;
+}
+
+input:hover {
+  border: 0.5px solid currentColor;
+  transform: scale(1.1);
 }
 
 /* input.text {
@@ -324,6 +358,15 @@ section.second {
   border-radius: 35px 35px 0px 0px;
   padding-bottom: 8rem;
   margin-bottom: -3rem;
+  align-items: center;
+}
+
+section.second-form {
+  background-color: var(--background-main2);
+  /* border-radius: 35px 35px 0px 0px; */
+  padding-bottom: 8rem;
+  margin-bottom: -3rem;
+  align-items: center;
 }
 
 section.third {
@@ -358,7 +401,7 @@ section.third {
     display: inherit;
   }
   /* .page-max-width {
-    margin: 0 100%;
+    margin: 0 0;
   } */
 }
 
@@ -386,7 +429,4 @@ section.third {
   .header-menu-button {
     display: none;
   }
-  /* .page-max-width {
-    margin: 0 auto;
-  } */
 }

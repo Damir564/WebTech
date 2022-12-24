@@ -146,7 +146,7 @@
         <div>
           <h2>Contact us</h2>
           <p class="small">Contact us if you need more information about our services</p>
-          <form action="/" method="get">
+          <form method="POST" data-netlify="true">
             <p class="form">
               <input class="text" type="text" name="name" id="name" placeholder="Name" />
             </p>
@@ -163,7 +163,7 @@
                 I agree with the <a href="#">Privacy policy</a>
               </label>
             </p>
-            <button class="submit">SEND A MESSAGE</button>
+            <button class="form" type="submit">SEND A MESSAGE</button>
           </form>
         </div>
         <img class="img-dynamic" src="img/img_last_with_car.png" alt="Машина на борту" width="373"
@@ -171,6 +171,7 @@
       </div>
     </section>
     <section class="third">
+      <!-- <div class="page-max-width"> -->
       <div class="page-max-width">
         <img src="img/logo_1.svg" alt="MDA SHIPPING" width="235" height="67" />
         <ul>
@@ -180,8 +181,8 @@
         </ul>
         <a href="#" class="third"><img src="img/whatsapp_1.svg" alt="whatsapp" /></a>
         <a href="#" class="third"><img src="img/telegram_1.svg" alt="telegram" /></a>
-        <p><a href="#" class="third">info@cargo.us</a></p>
-        <p><a href="#" class="third">+1 912 000 0000</a></p>
+        <p><a href="mailto: info@cargo.us" class="third">info@cargo.us</a></p>
+        <p><a href="tel: +1 912 000 0000" class="third">+1 912 000 0000</a></p>
         <p class="third">Copyright © 2022 Cargo. All Rights reserved.</p>
       </div>
     </section>
