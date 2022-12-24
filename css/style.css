@@ -9,6 +9,7 @@ html {
   --font-second2: #f0f0fa;
   --background-main2: #3579f4;
   --background-second2: #5591ff;
+  --background-second3: #693acd;
   --font-main3: white;
   --background-main3: #18162d;
   --font-second3: #666666;
@@ -19,6 +20,10 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+::selection{
+  background: var(--background-second3);
 }
 
 /* img {
