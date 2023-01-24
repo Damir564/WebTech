@@ -6,6 +6,8 @@ html {
   --font-main1: black;
   --background-main1: white;
   --font-main2: white;
+  --font-main3: rgb(149, 28, 106);
+  --font-main4: rgb(195, 76, 247);
   --font-second2: #f0f0fa;
   --background-main2: #3579f4;
   --background-second2: #5591ff;
@@ -21,9 +23,21 @@ html {
 *:after {
   box-sizing: inherit;
 }
+:focus {
+  color: var(--font-main4);
+}
+
+.gradient {
+  background-image: linear-gradient(to right, var(--background-main2), var(--font-main1) 50%);
+  -webkit-background-clip: text;
+}
 
 ::selection{
   background: var(--background-second3);
+}
+
+::placeholder {
+  color: var(--font-main3);
 }
 
 /* img {
@@ -385,7 +399,7 @@ section.third {
   border-radius: 35px 35px 0px 0px;
 }
 
-@media all and (min-width: 20px){
+@media all{
   .boat-loading-more-810 {
     display: none;
   }
