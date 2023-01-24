@@ -38,61 +38,73 @@
           <form method="POST" data-netlify="true">
             <h2>Personal info</h2>
             <p class="form">
-              <input required type="text" name="name" id="name" placeholder="Name" />
+              <label for="name">
+                <input required type="text" name="name" id="name" placeholder="Name" />
+              </label>
             </p>
             <p class="form">
-              <input required type="date" name="date" id="date" placeholder="Date" />
+              <label for="date">
+                <input required type="date" name="date" id="date" placeholder="Date" />
+              </label>
             </p>
             <p class="form">
-              <input required type="password" name="password" id="password" placeholder="Password" />
+              <label for="password">
+                <input required type="password" name="password" id="password" placeholder="Password" />
+              </label>
             </p>
             <p>
               <label for="gender-men">
-              <input type="radio" name="gender" id="gender-men" value="men" placeholder="Gender"> Men
+                <input type="radio" name="gender" id="gender-men" value="men" placeholder="Gender"> Men
               </label>
             </p>
             <p>
               <label for="gender-women">
-              <input type="radio" name="gender" id="gender-women" value="women" placeholder="Gender"> Women
-            </label>
+                <input type="radio" name="gender" id="gender-women" value="women" placeholder="Gender"> Women
+              </label>
             </p>
             <h2>Contact us</h2>
             <p class="small">Contact us if you need more information about our services</p>
             <p class="form">
-              <input required type="tel" name="phone" id="phone" placeholder="Phone number" />
+              <label for="phone">
+                <input required type="tel" name="phone" id="phone" placeholder="Phone number" />
+              </label>
             </p>
             <p class="form">
-              <input type="mail" name="mail" id="mail" placeholder="Mail" />
+              <label for="mail">
+                <input type="mail" name="mail" id="mail" placeholder="Mail" />
+              </label>
             </p>
             <p class="form">
-              <!-- <input type="text" name="message" id="message" placeholder="Message"/> -->
-              <textarea class="text" id="message" placeholder="Message"></textarea>
+              <label for="message">
+                <!-- <input type="text" name="message" id="message" placeholder="Message"/> -->
+                <textarea class="text" id="message" placeholder="Message"></textarea>
+              </label>
             </p>
             <p>
               <label for="meeting-afternoon"><input type="radio" name="meeting" id="meeting-afternoon" value="afternoon"
-                placeholder="meeting">Afternoon</label>
+                  placeholder="meeting">Afternoon</label>
             </p>
             <p>
               <label for="meeting-day">
-              <input type="radio" name="meeting" id="meeting-day" value="day" placeholder="meeting"> Day
-            </label>
+                <input type="radio" name="meeting" id="meeting-day" value="day" placeholder="meeting"> Day
+              </label>
             </p>
             <p>
               <label for="meeting-evening">
-              <input type="radio" name="meeting" id="meeting-evening" value="evening" placeholder="meeting"> Evening
-            </label>
+                <input type="radio" name="meeting" id="meeting-evening" value="evening" placeholder="meeting"> Evening
+              </label>
             </p>
             <p>
               <label for="meeting-night">
-              <input type="radio" name="meeting" id="meeting-night" value="night" placeholder="meeting"> Night
-            </label>
-            </p>
-            <p class="small">
-              <label>
-                <input required type="checkbox" name="agree" id="agree" />
-                I agree with the <a href="#">Privacy policy</a>
+                <input type="radio" name="meeting" id="meeting-night" value="night" placeholder="meeting"> Night
               </label>
             </p>
+            <label>
+              <p class="small">
+                <input required type="checkbox" name="agree" id="agree" />
+                I agree with the <a href="#">Privacy policy</a>
+              </p>
+            </label>
             <p>
               <button class="form" type="submit">SEND A MESSAGE</button>
             </p>

@@ -25,6 +25,7 @@ html {
 }
 :focus {
   color: var(--font-main4);
+  border: 10rem;
 }
 
 /* .gradient {
@@ -50,10 +51,6 @@ html {
 /* img {
     margin-top: 1rem;
 } */
-
-*:focus {
-  border: 10rem;
-}
 
 
 
