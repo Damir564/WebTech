@@ -34,7 +34,7 @@ html {
 
 .gradient{
   color:#000;
-  background: linear-gradient(to right,#43e97b,#38f9d7);
+  background: linear-gradient(to top,#43e97b,#38f9d7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -50,10 +50,12 @@ html {
 /* img {
     margin-top: 1rem;
 } */
-/* 
+
 *:focus {
   border: 10rem;
-} */
+}
+
+
 
 .header {
   padding-top: 2rem;
@@ -342,6 +344,9 @@ button.form {
   transition-property: all;
 }
 
+button.form:active {
+  color: red;
+}
 button.form:hover {
   background: var(--background-second2);
   border: 0.5px solid currentColor;
