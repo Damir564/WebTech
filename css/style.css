@@ -95,6 +95,19 @@ html {
   margin: 0 auto;
 }
 
+.footer {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-m {
+  margin-bottom: 1rem;
+}
+
+
 .width-limit-1 {
   max-width: 44.5rem;
 }
@@ -181,6 +194,10 @@ img.img-dynamic {
   flex-direction: column;
   align-self: flex-end;
 }
+
+/* .last-logo {
+  padding-bottom: 5rem;
+} */
 
 /* div.flex-1 {
   display: flex;
@@ -279,6 +296,7 @@ p.form {
 }
 
 p.third {
+  text-align: center;
   padding-top: 3rem;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -395,11 +413,16 @@ section.second-form {
 
 section.third {
   background-color: var(--background-main3);
-  text-align: center;
   border-radius: 35px 35px 0px 0px;
 }
 
 @media all{
+  p.third {
+    text-align: center;
+  }
+  .footer {
+    display: block;
+  }
   .boat-loading-more-810 {
     display: none;
   }
@@ -431,6 +454,12 @@ section.third {
 
 
 @media all and (min-width: 810px){
+  p.third {
+    text-align: left;
+  }
+  .footer {
+    display: flex;
+  }
   .boat-loading-more-810 {
     display: initial;
   }
