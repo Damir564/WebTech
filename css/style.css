@@ -27,9 +27,16 @@ html {
   color: var(--font-main4);
 }
 
-.gradient {
+/* .gradient {
   background-image: linear-gradient(to right, var(--background-main2), var(--font-main1) 50%);
   -webkit-background-clip: text;
+} */
+
+.gradient{
+  color:#000;
+  background: linear-gradient(to right,#43e97b,#38f9d7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 ::selection{
